@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==========HOME=========== */
+
+/* =====HEADER===== */
+
+.barra-de-navegacao{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.navegacao{
+    display: flex;
+    margin-right: 60px;
+}
+
+.navegacao li{
+    margin-left: 30px;
+}
+
+.navegacao li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 0px;
+    font-weight: 600;
+    font-size: 19px;
+    color: white;
+}
+
+.navegacao-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.navegacao-item:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* =====MAIN===== */
+
+.home{
+    background-image: url(../img/website-bg.png);
+    width: 100%;
+    height: 99vh;
+    background-size: cover;       
+}
+
+.logo-central{
+    /* width: 654px;
+    height: 654px; */
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -1%;
+}
+
+.icons{
+    display: grid;
+    position: absolute;
+    top: 38%;
+    color: white;
+    margin: 50px;
+    font-size: 40px;
+}
+
+
+.bxl-behance{
+    padding-top: 15px;
+    color: white;
+}
+
+.bxl-github{
+    padding-top: 15px;
+    color: white;
+}
+
+.bxl-linkedin{
+    padding-top: 15px;
+    color: white;
+}
+
+.bamor-model{
+    position: absolute;
+    top: 36.5%;
+    left: 34%;
+    width: 31.5%;
+}
+
+/* =====FOOTER===== */
+
+.card-apresentacao{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(240, 240, 240, 1);
+    display: flex;
+    position: absolute;
+    width: 38.5%;
+    left: 58.7%;
+    padding: 20px;
+}
+
+.apresentacao{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.linha-vertical{
+    height: 58px;
+    border-right: 2px solid white;
+}
+
+.nomeclatura{
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+/* ==========SOBRE-MIM=========== */
+
+.sobre-mim{
+    background-image: url(../img/bg2.png);
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+.sobre-container{
+    display: flex;
+}
+
+#colagem1{
+    width: 82%;
+    margin-top: 9%;
+    margin-left: 10%;
+    /* height: 564px; */
+}
+
+.sobre-text{
+    color: white;
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+}
+
+.sobre-text h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sobre-text p{
+    width: 500px;
+    height: 120px;
+    margin-top: 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.sobre-info-total{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+.sobre-info-number,
+.sobre-info-text{
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sobre-info-number{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.sobre-info-text{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sobre-botao{
+    background-color: #FCB308;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 233px;
+    height: 60px;
+    margin-left: 30%;
+    margin-top: 60px;
+    
+    
+    border-radius: 37px;
+}
+
+.sobre-botao-curriculo{
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+.bxs-download{
+    font-size: 25px;
+}
+
+/* ==========HABILIDADES=========== */
+
+.habilidades-textos .titulos{
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.habilidades-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+.habilidades-img-microsd{
+    margin: 4% 10% 10% 10%;
+}
+.habilidades-img-microsd-grupo1{
+    display: flex;
+}
+
+#disquete{
+    /* width: 115%; */
+    width: 550px;
+    height: 550px;
+    /* filter: drop-shadow(-17px 19px 4px rgba(0, 0, 0, 0.25)); */
+    margin-top: 7%;
+}
+
+
+#microsd1{
+    width: 253px;
+    height: 252px;
+    filter: drop-shadow(-10px 9px 4px rgba(0, 0, 0, 0.25));
+}
+
+#microsd2{
+    width: 253px;
+    height: 252px;
+    filter: drop-shadow(-10px 9px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+#microsd3{
+    width: 253px;
+    height: 252px;
+    filter: drop-shadow(-10px 9px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* ==========SERVIÇOS=========== */
+
+.servicos-titulos{
+    color: black;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.servicos-cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.servicos-card1{
+    background: #FFC94D;;
+    display: grid;
+    border-radius: 15px;
+}
+
+.servicos-card2{
+    background: #FFC94D;;
+    display: grid;
+    border-radius: 15px;
+}
+
+.servicos-card3{
+    background: #FFC94D;;
+    display: grid;
+    border-radius: 15px;
+}
+
+.servicos-cards-titulo-img{
+    display: grid;
+}
+
+.servicos-design-icon{
+    width: 77px;
+    height: 74px;
+    padding: 21px 174px 15px 29px ;
+}
+
+.servicos-art-icon{
+    width: 78px;
+    height: 78px;
+    padding: 19px 174px 13px 28px;
+}
+
+.servicos-code-icon{
+    width: 60px;
+    height: 60px;
+    padding: 27px 189px 20px 28px;
+}
+
+.servicos-card-titulo1{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135.9%;
+    padding: 15px 185px 23px 37px;
+}
+
+.servicos-card-titulo2{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135.9%;
+    padding: 13px 191px 23px 28px;
+}
+
+.servicos-card-titulo3{
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135.9%;
+    padding: 20px 114px 23px 28px;
+}
+
+.servicos-card-p{
+    color: black;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14,95px;
+    text-align: left;
+    padding: 5px 20px 25px 20px;
+}
+
+.servicos-card-botao{
+    background-color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    width: 101px;
+    height: 36px;
+    margin: 0px 159px 24px 20px;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 20px;
+}
+
+.servicos-card-botao-text{
+    color: white;
+    text-decoration: none;
+    padding-top: 9px;
+}
+
+/* ==========PORTIFÓLIO=========== */
+
+.portifolio-container{
+    background-color: black;
+    display: flex;
+}
+
+.portifolio-img-bg{
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    background-size: cover;
+}
+
+
+.portifolio-text{
+    position: absolute;
+    color: white;
+    padding: 250px 73px 321px 876px;
+}
+
+.portifolio-text-h2{
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 18px;
+}
+
+.portifolio-text-p{
+    font-weight:400;
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+.portifolio-botao{
+    position: absolute;
+    background-color: #FCB308;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 233px;
+    height: 65px;
+    left: 980px;
+    top: 3485px;
+
+
+    border-radius: 37px;
+}
+
+.portifolio-botao-text{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
