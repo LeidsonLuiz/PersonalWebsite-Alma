@@ -266,7 +266,7 @@ html{
     /* width: 115%; */
     width: 550px;
     height: 550px;
-    /* filter: drop-shadow(-17px 19px 4px rgba(0, 0, 0, 0.25)); */
+    filter: drop-shadow(-17px 19px 4px rgba(0, 0, 0, 0.25));
     margin-top: 7%;
 }
 
